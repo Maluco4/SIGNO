@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escolha casso</title>
+</head>
+<body>
+    <h1>SIGNO</h1>
+    <input type="text" id="signos">
+    <button onclick="escolhaSigno()">Buscar</button>
+    <div id="frase"></div>
+    <script src="main.js"></script>
+
+    <script>
+        function escolhaSigno() {
+            var texto;
+            var signo = document.querySelector('#signos').value;
+
+            switch (signo) {
+                case "Áries":
+                    texto = "Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes. "
+                    break;
+
+                case "Touro":
+                    texto = "Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!"
+                    break;
+
+                case "Gêmeos":
+                    texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. "
+                    break;
+
+                case "Câncer":
+                    texto = "Emotivos e sensíveis, quem tem sol no signo de Câncer costuma ter uma forte conexão com as lembranças do passado, que podem contribuir para posturas muito sentimentais ou até melancólicas. Cancerianas e cancerianos podem ser muito apegados, mas costumam ter um cuidado ímpar com todas as pessoas que amam. Tendem a buscar segurança e proteção, e isso pode se demonstrar com comportamentos no dia a dia que não oferecem grandes riscos. "
+                    break;
+
+                case "Leão":
+                    texto = "Vaidade e bom humor podem ser marca registrada na personalidade de quem tem o sol no signo de Leão. Carismáticos e naturalmente destacáveis, leoninas e leoninos típicos tendem a ser bem extrovertidos. Sua generosidade também se destaca em seu modo de amar, a felicidade da outra pessoa na relação também é motivo de sua própria alegria. "
+            break;
+
+                case "Virgem":
+                    texto = "A busca pela perfeição pode ser bem presente na personalidade de quem tem o sol no signo de Virgem. Naturalmente adeptos da praticidade, virginianas e virginianos podem melhorar sua auto-estima se sentindo mais úteis e produtivos. O nível elevado de autocrítica, porém, pode levá-los a subestimar seus próprios talentos com certa facilidade."
+            break;
+
+                case "Libra":
+                    texto = "A empatia e a diplomacia podem ser bem presentes na personalidade de quem tem o sol no signo Libra. Naturalmente direcionados para as relações com outras pessoas, librianas e librianos podem ter um grande talento para solucionar conflitos, porém, a preocupação em racionalizar os dois lados de uma questão pode gerar situações de dúvida e indecisão."
+            break;
+
+                case "Escopião":
+                    texto = "Uma forte intuição é uma das marcas registradas de quem tem Sol no signo Escorpião, geralmente orientados pelas suas emoções, escorpianos e escorpianas conseguem enxergar nas entrelinhas e identificar o que não foi dito. Bastante conectados com seus sentimentos, podem desenvolver comportamentos possessivos e obsessivos."
+            break;
+
+                case "Sagitário":
+                    texto = "Vaidosos e bem humorados, quem tem sol no signo de Sagitário costuma enxergar com facilidade o lado positivo de cada situação. Cidadãos do mundo, sagitarianas e sagitarianos geralmente são pessoas extrovertidas, espontâneas e comunicativas que não gostam nenhum pouco de solidão. O idealismo sempre presente, também faz do signo de Sagitário o incentivador ideal, capaz de contagiar qualquer equipe sem muitos esforços."
+            break;
+
+                case "Capricórnio":
+                    texto = "Praticidade e maturidade são típicas características de Capricórnio. Independentes, costumam fazer seu próprio caminho e não confiar muito em rotas traçadas por outras pessoas. Quem tem um acúmulo de planetas em Capricórnio signo pode ter um perfil workaholic, mas a carreira profissional é apenas um dos aspectos que chamam a atenção dos capricornianos."
+            break;
+
+                case "Aquário":
+                    texto = "A busca por inovação e independência podem ser características fortes em pessoas com o sol no signo de Aquário. Com criatividade sempre em alta, costumam ser bastante inventivas e direcionadas a solução de problemas. Quem tem um acúmulo de planetas no signo de Aquário pode ter um perfil questionador e radical, e em algumas situações pode discordar da maioria pelo simples fato de querer ser sempre diferente."
+            break;
+
+                case "Peixes":
+                    texto = "A empatia e a humildade podem ser fortes características de Peixes. Sempre conectados com sua intuição, piscianos e piscianas costumam captar as coisas no ar, muitas vezes são pessoas bem discretas e observadoras que conseguem perceber o mundo através da observação de si. Quem tem um acúmulo de planetas no signo de Peixes tende a dar muita importância aos seus sonhos e ao que ainda não é real, mas pode ser."
+            break;
+
+
+                default:
+                    texto = "insira um signo existente"
+            }
+
+            document.getElementById("frase").innerHTML = texto
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <footer>
+        <h2>ProgramadorWeb | www.instagram.com/alipiomorais<h2>
+    </footer>
+    <br>
+    <br>
+    <br>
+
+</body>
+</html>
